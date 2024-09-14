@@ -134,7 +134,7 @@ body {
 /* for mobile */
 @media (max-width: 600px) {
   #movie-list {
-    top: 60vh;
+    top: 56vh;
   }
   .intro {
     font-size: large;
