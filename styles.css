@@ -49,7 +49,7 @@ body {
 
 #movie-list {
   position: absolute;
-  top: 30vw;
+  top: 65vh;
   /* left: 15vw; */
   height: auto;
   background-color: rgba(243, 240, 240, 0.9);
