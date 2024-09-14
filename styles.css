@@ -133,7 +133,7 @@ body {
 /* for mobile */
 @media (max-width: 600px) {
   #movie-list {
-    top: 70vh;
+    top: 60vh;
   }
   .intro {
     font-size: large;
