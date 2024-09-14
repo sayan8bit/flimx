@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlimX</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="brand">Flim<span class="color">X</span></div>
+    </nav>
+    <div class="intro">
+      <h1>Welcome to Flim<span class="color">X</span></h1>
+      <h3>Your Ultimate Destination for Movies and TV Shows</h3>
+      <div id="search-container">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search for a movie..."
+        />
+      </div>
+    </div>
+
+    <main>
+      <section id="movie-list">
+        <!-- Movie posters will be dynamically loaded here -->
+      </section>
+
+      <!--  -->
+
+      <section id="video-player" style="display: none">
+        <button id="close-video">X</button>
+
+        <video
+          id="player"
+          preload="auto"
+          controls
+          controlsList="nodownload"
+          disablePictureInPicture
+        ></video>
+      </section>
+    </main>
+
+    <!--  -->
+    <script>
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+    </script>
+    <script>
+      document.addEventListener("keydown", function (e) {
+        if (
+          (e.ctrlKey &&
+            (e.key === "u" ||
+              e.key === "i" ||
+              e.key === "a" ||
+              e.key === "c")) ||
+          e.shiftKey
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
+
+    <!--  -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
