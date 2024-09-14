@@ -139,9 +139,12 @@ body {
     font-size: large;
   }
   .movie {
-    width: 110px;
+    width: 32vw;
   }
   .movie-name {
     font-size: 1px;
+  }
+   #video-player {
+    width: 90vw;
   }
 }
