@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #141414;
+  overflow-x: hidden; /* Hides the horizontal scrollbar */
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /* color: white; */
+}
+.color {
+  color: blueviolet;
+}
+
+#brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.intro {
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  padding: 15vh 0;
+  font-size: xx-large;
+  height: 30vh;
+}
+
+#search-container {
+  display: flex;
+  justify-content: center;
+}
+
+#search-bar {
+  width: 300px;
+  padding: 8px;
+  /* border: none; */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#movie-list {
+  position: absolute;
+  top: 30vw;
+  /* left: 15vw; */
+  height: auto;
+  background-color: rgba(243, 240, 240, 0.9);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+
+  flex-wrap: wrap;
+
+  /* width: 70vw; */
+  width: 80vw;
+  gap: 0;
+  padding: 40px 10vw;
+}
+
+.movie {
+  /* width: 165px; */
+  width: 11vw;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s; /* Optional: Add a hover effect */
+}
+
+.movie:hover {
+  transform: scale(1.05); /* Optional: Scale slightly on hover */
+}
+.movie-container {
+  border: 0.1px solid white;
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #bebcbc;
+
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.movie-name {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #242424;
+}
+
+#video-player {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: #000; */
+  padding: 20px;
+  z-index: 1000;
+  object-fit: cover;
+  width: 600px;
+  border-radius: 10px;
+}
+
+#video-player.mini-size {
+  width: 200px; /* Mini size for the video */
+}
+
+#player {
+  width: 100%;
+  border: none;
+  background-color: #000;
+}
+
+#close-video {
+  padding: 2px 6px;
+  float: right;
+  border-radius: 10px;
+  border-style: none;
+  opacity: 0.3;
+  background-color: #000;
+  color: #fff;
+}
+.blur-content {
+  filter: blur(5px);
+}
+/* for mobile */
+@media (max-width: 600px) {
+  #movie-list {
+    top: 70vw;
+  }
+  .intro {
+    font-size: large;
+  }
+  .movie {
+    width: 110px;
+  }
+  .movie-name {
+    font-size: 1px;
+  }
+}
